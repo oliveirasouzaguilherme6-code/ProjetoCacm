@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CACM Sports | Contato</title>
+  <meta name="description" content="Contato CACM Sports." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="imgs/logo-cacm.png" alt="Logo CACM Sports" class="logo" />
+        <div class="brand-text">
+          <strong>CACM SPORTS</strong>
+          <span>Campo Mourão • Esporte e evolução</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Início</a>
+        <a href="modalidades.html">Modalidades</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-top">
+    <section class="subhero-v2">
+      <div class="container">
+        <div class="section-head reveal center">
+          <span class="tag dark">CONTATO</span>
+          <h1 class="page-title">Entre em contato com o CACM Sports</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container contact-layout">
+        <div class="contact-info-box reveal">
+          <h3>Informações</h3>
+          <ul>
+            <li><strong>Projeto:</strong> CACM Sports</li>
+            <li><strong>Público:</strong> Infantil e juvenil</li>
+            <li><strong>Responsável:</strong> Professor Eric</li>
+            <li><strong>Instagram:</strong> @cacm_sports</li>
+            <li><strong>Horários:</strong> editar depois</li>
+          </ul>
+
+          <a
+            href="https://wa.me/5544999893570?text=Olá! Quero saber mais sobre o CACM Sports."
+            class="btn btn-primary full"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Chamar no WhatsApp</a>
+        </div>
+
+        <form class="contact-form-box reveal" id="contactForm">
+          <h3>Formulário de interesse</h3>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="responsavel">Nome do responsável</label>
+              <input type="text" id="responsavel" placeholder="Seu nome" />
+            </div>
+
+            <div class="field">
+              <label for="aluno">Nome do aluno</label>
+              <input type="text" id="aluno" placeholder="Nome do aluno" />
+            </div>
+
+            <div class="field">
+              <label for="idade">Idade</label>
+              <input type="number" id="idade" placeholder="Ex: 12" />
+            </div>
+
+            <div class="field">
+              <label for="modalidade">Modalidade</label>
+              <select id="modalidade">
+                <option>Futsal</option>
+                <option>Vôlei</option>
+                <option>Ginástica</option>
+                <option>Eventos esportivos</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input type="text" id="telefone" placeholder="(44) 99999-9999" />
+            </div>
+
+            <div class="field full">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark full">Enviar interesse</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a
+    href="https://wa.me/5544999893570?text=Olá! Quero saber mais sobre o CACM Sports."
+    class="whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >💬</a>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="imgs/logo-cacm.png" alt="Logo CACM Sports" class="logo footer-logo" />
+        <div>
+          <strong>CACM SPORTS</strong>
+          <span>Campo Mourão • PR</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="index.html">Início</a>
+        <a href="modalidades.html">Modalidades</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <p class="footer-note">Site desenvolvido por Sygler Tech</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
