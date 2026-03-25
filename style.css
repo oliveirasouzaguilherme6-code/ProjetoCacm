@@ -1051,3 +1051,88 @@ select {
     font-size: 15px;
   }
 }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.hero-v2-copy h1 {
+  color: var(--white);
+  font-size: clamp(42px, 9vw, 128px);
+  margin-bottom: 18px;
+  line-height: 0.92;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb, #1d4ed8);
+  color: #fff;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 16px 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.22);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.btn-primary:hover::after {
+  left: 120%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.45);
+}
+
+.btn-primary::before {
+  content: "📱";
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+@media (max-width: 860px) {
+  .hero-v2-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-v2-copy {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-v2-copy h1 {
+    font-size: clamp(40px, 13vw, 64px);
+    line-height: 0.9;
+    letter-spacing: -0.5px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-v2-copy p {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+}

@@ -51,6 +51,37 @@ if ("IntersectionObserver" in window) {
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    alert("Formulário demonstrativo enviado! Depois você pode integrar com WhatsApp ou e-mail.");
+
+    // PEGAR VALORES
+    const responsavel = document.getElementById("responsavel").value;
+    const aluno = document.getElementById("aluno").value;
+    const idade = document.getElementById("idade").value;
+    const modalidade = document.getElementById("modalidade").value;
+    const telefone = document.getElementById("telefone").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    // MENSAGEM FORMATADA
+    const texto = `Olá! Tenho interesse no CACM Sports:
+
+👤 Responsável: ${responsavel}
+👦 Aluno: ${aluno}
+🎂 Idade: ${idade}
+🏆 Modalidade: ${modalidade}
+📞 Telefone: ${telefone}
+
+💬 Mensagem:
+${mensagem}`;
+
+    // CODIFICAR PARA URL
+    const textoCodificado = encodeURIComponent(texto);
+
+    // SEU NÚMERO (SEM ESPAÇO)
+    const numero = "5544997573991";
+
+    // LINK WHATSAPP
+    const url = `https://wa.me/${numero}?text=${textoCodificado}`;
+
+    // REDIRECIONAR
+    window.open(url, "_blank");
   });
 }
