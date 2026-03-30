@@ -76,7 +76,7 @@ ${mensagem}`;
     const textoCodificado = encodeURIComponent(texto);
 
     // SEU NÚMERO (SEM ESPAÇO)
-    const numero = "5544997573991";
+    const numero = "554499893570";
 
     // LINK WHATSAPP
     const url = `https://wa.me/${numero}?text=${textoCodificado}`;
